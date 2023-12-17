@@ -6,43 +6,82 @@
     <style>
         p {
             color: white;
+            margin: 7px 5px;
+        }
+
+        input {
+            margin: 10px 5px;
+            height: fit-content;
+        }
+
+        .caixa {
+            display: flex;
+            justify-content: left;
+            background-color: gray;
+            border: 1px black solid;
+            width: fit-content;
+            height: fit-content;
+            margin-top: -17px;
+            
+        }
+
+        #primeiro {
+            margin-top: 0px;
+            
+        }
+
+        #geral {
+            display: grid;
+            justify-content: left;
         }
     </style>
 </head>
 <body>
     <form>
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <p>Matemática</p>
-        <br>
-        
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <p>Física</p>
-        <br>
-        
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <p>Java</p>
-        <br>
-        
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="checkbox">
-        <p>Python</p>
-        <br>
-        
-        <input type="checkbox">
-        <input type="checkbox">
-        <p>Investimentos</p>
-        <br>
+        <div id="geral">
+            <div class="caixa" id="primeiro">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <p>Matemática</p>
+            </div>
+            <br>
+            
+            <div class="caixa">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <p>Física</p>
+            </div>
+            <br>
+            
+            <div class="caixa">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <p>Java</p>
+            </div>
+            <br>
+            
+            <div class="caixa">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <p>Python</p>
+            </div>
+            <br>
+            
+            <div class="caixa">
+                <input type="checkbox">
+                <input type="checkbox">
+                <p>Investimentos</p>
+            </div>
+            <br>
+        </div>
         
     </form>
 </body>
